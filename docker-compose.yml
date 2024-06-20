@@ -1,0 +1,29 @@
+version: '3'
+services:
+  db:
+    build:
+      context: ./db
+    networks:
+      - mynetwork
+
+  api:
+    build:
+      context: ./api
+    depends_on:
+      - db
+    networks:
+      - mynetwork
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - api
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
