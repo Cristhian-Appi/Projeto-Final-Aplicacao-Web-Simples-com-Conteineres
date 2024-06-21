@@ -28,8 +28,6 @@ Descrição: Todos os contêineres devem estar na mesma rede, permitindo a comun
 
 # COMANDOS
 
-usando um terminal linux.
-
 ### Limpeza de Contêineres Anteriores
 
 Antes de iniciar a configuração e o deployment, é recomendável limpar qualquer contêiner, volume ou imagem Docker existente relacionado ao projeto. Para isso, execute os seguintes comandos no terminal Linux:
