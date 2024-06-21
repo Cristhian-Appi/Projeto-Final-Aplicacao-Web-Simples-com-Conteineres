@@ -3,7 +3,9 @@
 O projeto é composto por três componentes:
 
 O front-end em NEXT;
+
 A API em JavaScript;
+
 O banco de dados MongoDB.
 
 Componentes do Projeto:
